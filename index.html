@@ -7,31 +7,40 @@
 <meta name="description" content="Gen Z Gaming Lounge — arcade games, pool, VR and lounge experiences at VIP Chowk, Guwahati.">
 <title>Gen Z Gaming Lounge | Game • Play • Chill</title>
 <style>
-:root{color-scheme:dark;--pink:#ff35c8;--cyan:#24e9ff;--gold:#ff9d35}
+:root{color-scheme:dark;--pink:#ff35c8;--cyan:#24e9ff;--gold:#ffb347}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#05050b;color:#fff;font-family:Arial,Helvetica,sans-serif}
-header{position:absolute;z-index:2;top:0;left:0;right:0;padding:20px 5%;display:flex;justify-content:space-between;align-items:center;background:linear-gradient(#05050bdc,transparent)}
+header{position:absolute;z-index:3;top:0;left:0;right:0;padding:20px 5%;display:flex;justify-content:space-between;align-items:center;background:linear-gradient(#05050be8,transparent)}
 .brand{font-weight:900;letter-spacing:2px}.brand span{color:var(--pink)}
-nav{display:flex;gap:24px;font-size:14px}nav a{color:#fff;text-decoration:none}
-.hero{min-height:100svh;display:flex;align-items:end;position:relative;background:#090914 url('images/genz-banner.webp') center/cover no-repeat}
-.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#05050bea 0%,#05050b28 50%,#05050b66 100%)}
-.hero-copy{position:relative;padding:100px 7% 8vh;max-width:900px}
+nav{display:flex;gap:24px;font-size:14px}nav a{color:#fff;text-decoration:none}nav a:hover{color:var(--cyan)}
+.hero{min-height:100svh;display:flex;align-items:end;position:relative;background:#090914 url('https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=2200&q=88') center/cover no-repeat}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#05050bf2 0%,#05050b9c 48%,#05050b20 100%),linear-gradient(0deg,#05050bea 0%,transparent 65%)}
+.hero-copy{position:relative;padding:130px 7% 9vh;max-width:940px}
 .eyebrow{color:var(--cyan);letter-spacing:4px;text-transform:uppercase;font-size:13px;font-weight:800}
-h1{font-size:clamp(42px,8vw,94px);line-height:.95;margin:15px 0;text-transform:uppercase;text-shadow:0 0 24px #ff35c877}
-h1 span{color:var(--pink)}.intro{font-size:clamp(16px,2vw,20px);color:#e3e3f3;max-width:620px;line-height:1.6}
-.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:14px 24px;border-radius:999px;text-decoration:none;font-weight:900;background:linear-gradient(100deg,var(--pink),#7b45ff);color:#fff;box-shadow:0 0 25px #ff35c866}.btn.secondary{background:#080914aa;border:1px solid var(--cyan);box-shadow:0 0 18px #24e9ff44}
-section{padding:76px 7%;text-align:center}.section-title{font-size:clamp(30px,5vw,52px);margin:0 0 12px}.muted{color:#b6b6c9;max-width:720px;margin:0 auto 34px;line-height:1.7}
+h1{font-size:clamp(46px,8vw,100px);line-height:.93;margin:17px 0;text-transform:uppercase;text-shadow:0 0 28px #ff35c877}
+h1 span{color:var(--pink)}.intro{font-size:clamp(16px,2vw,20px);color:#e3e3f3;max-width:620px;line-height:1.65}
+.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-block;padding:15px 25px;border-radius:999px;text-decoration:none;font-weight:900;background:linear-gradient(100deg,var(--pink),#7b45ff);color:#fff;box-shadow:0 0 25px #ff35c866;transition:.2s}.btn:hover{transform:translateY(-3px)}.btn.secondary{background:#080914aa;border:1px solid var(--cyan);box-shadow:0 0 18px #24e9ff44}
+section{padding:82px 7%;text-align:center}.section-title{font-size:clamp(30px,5vw,54px);margin:0 0 12px}.muted{color:#b6b6c9;max-width:720px;margin:0 auto 36px;line-height:1.7}
+.gallery{display:grid;grid-template-columns:1.35fr 1fr 1fr;grid-template-rows:220px 220px;gap:15px;max-width:1200px;margin:0 auto}.shot{position:relative;overflow:hidden;border-radius:18px;border:1px solid #ffffff25;background:#121222;box-shadow:0 14px 40px #0009}.shot:first-child{grid-row:span 2}.shot img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .65s}.shot:hover img{transform:scale(1.07)}.shot:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#05050be8)}.shot-label{position:absolute;z-index:1;left:20px;bottom:18px;text-align:left;font-weight:900;letter-spacing:1px;text-transform:uppercase;text-shadow:0 2px 8px #000}
 .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:1150px;margin:auto}.tile{padding:28px 18px;border:1px solid #ffffff24;border-radius:18px;background:linear-gradient(145deg,#17142b,#0b0b17);box-shadow:0 10px 35px #0008}.tile .icon{font-size:42px}.tile h3{margin:12px 0 6px}.tile p{color:#b6b6c9;margin:0;font-size:14px;line-height:1.6}
 .contact{background:radial-gradient(ellipse at top,#271144,#080811 65%)}footer{padding:24px 7%;text-align:center;color:#aaa;border-top:1px solid #ffffff20;font-size:13px}
-@media(max-width:760px){header{padding:16px 5%}nav{display:none}.hero{background-position:center}.hero-copy{padding:90px 6% 7vh}.grid{grid-template-columns:repeat(2,1fr)}section{padding:58px 6%}}
-@media(max-width:420px){.grid{grid-template-columns:1fr}}
+@media(max-width:760px){header{padding:16px 5%}nav{display:none}.hero{background-position:58% center}.hero-copy{padding:110px 6% 8vh}.gallery{grid-template-columns:1fr 1fr;grid-template-rows:220px 170px 170px}.shot:first-child{grid-column:span 2;grid-row:auto}.grid{grid-template-columns:repeat(2,1fr)}section{padding:62px 6%}}
+@media(max-width:420px){.grid{grid-template-columns:1fr}.gallery{grid-template-rows:210px 150px 150px}.shot-label{left:13px;bottom:12px;font-size:13px}}
 </style>
 </head>
 <body>
-<header><div class="brand">GEN Z <span>GAMING LOUNGE</span></div><nav><a href="#games">Gaming Zones</a><a href="#visit">Visit Us</a></nav></header>
+<header><div class="brand">GEN Z <span>GAMING LOUNGE</span></div><nav><a href="#gallery">The Vibe</a><a href="#games">Gaming Zones</a><a href="#visit">Visit Us</a></nav></header>
 <main>
-<section class="hero" aria-label="Gen Z Gaming Lounge featured banner">
-<div class="hero-copy"><div class="eyebrow">Game • Play • Chill • Repeat</div><h1>Level up<br><span>your hangout.</span></h1><p class="intro">Arcade action, pool challenges, VR experiences and a lounge made for unforgettable time with friends.</p><div class="actions"><a class="btn" href="tel:+917354077243">Call to Visit</a><a class="btn secondary" href="#games">Explore the Lounge</a></div></div>
+<section class="hero" aria-label="Cinematic gaming lounge hero">
+<div class="hero-copy"><div class="eyebrow">Game • Play • Chill • Repeat</div><h1>Level up<br><span>your hangout.</span></h1><p class="intro">Arcade action, pool challenges, VR experiences and a lounge made for unforgettable time with friends. Bring your squad. Make a night of it.</p><div class="actions"><a class="btn" href="tel:+917354077243">Call to Visit</a><a class="btn secondary" href="#gallery">Explore the Vibe</a></div></div>
 </section>
+<section id="gallery"><h2 class="section-title">STEP INTO THE GAME.</h2><p class="muted">Neon nights, friendly rivalries and all the right reasons to stay a little longer.</p>
+<div class="gallery">
+<div class="shot"><img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=1200&q=85" alt="Atmospheric gaming setup with glowing screens"><div class="shot-label">Your Gaming Zone</div></div>
+<div class="shot"><img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=85" alt="Esports gaming event"><div class="shot-label">Tournament Energy</div></div>
+<div class="shot"><img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=900&q=85" alt="Gaming controller and setup"><div class="shot-label">Console Battles</div></div>
+<div class="shot"><img src="https://images.unsplash.com/photo-1603481546238-487240415921?auto=format&fit=crop&w=900&q=85" alt="Colourful arcade gaming atmosphere"><div class="shot-label">Arcade Nights</div></div>
+<div class="shot"><img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=900&q=85" alt="Entertainment and games"><div class="shot-label">Play Together</div></div>
+</div></section>
 <section id="games"><h2 class="section-title">CHOOSE YOUR GAME.</h2><p class="muted">Bring your crew, pick your challenge and make your next match unforgettable.</p><div class="grid">
 <article class="tile"><div class="icon">🕹️</div><h3>Arcade Games</h3><p>Chase high scores and enjoy quick-fire arcade action.</p></article>
 <article class="tile"><div class="icon">🎱</div><h3>Pool Table</h3><p>Challenge your friends to a classic pool match.</p></article>
